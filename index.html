@@ -55,35 +55,40 @@
             height: 130px;
             position: relative;
             transform: rotate(45deg);
-            left: calc(50% + 237px);
-        }
+            text-align: center;
+            left: calc(50% + -60px);
+            justify-content: stretch;
+            display: grid;
+            grid-column: span 16;
+            grid-template-columns: repeat(33, -2fr);
+            }
 
-        .heart-box::before {
-            content: "";
-            width: 130px;
-            height: 130px;
-            background-color: #ffb3b3;
-            position: absolute;
-            border-radius: 50%;
-        }
+            .heart-box::before {
+                content: "";
+                width: 130px;
+                height: 130px;
+                background-color: #ffb3b3;
+                position: absolute;
+                border-radius: 50%;
+            }
 
-        .heart-box::after {
-            content: "";
-            width: 130px;
-            height: 120px;
-            background-color: #ffb3b3;
-            position: absolute;
-            border-radius: 50%;
-        }
+            .heart-box::after {
+                content: "";
+                width: 130px;
+                height: 120px;
+                background-color: #ffb3b3;
+                position: absolute;
+                border-radius: 50%;
+            }
 
-        .heart-box::before {
-            left: -60px;
-        }
+            .heart-box::before {
+                left: -60px;
+            }
 
-        .heart-box::after {
-            top: -60px;
-        }
-    </style>
+            .heart-box::after {
+                top: -60px;
+            }
+</style>
 </head>
 <body id="db">
 <div id="wrapper">
